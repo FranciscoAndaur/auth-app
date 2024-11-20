@@ -163,9 +163,9 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## 📧 Contact
 
-Your Name - your.email@example.com
+Your Name - admin@franciscoandaur.com
 
-Project Link: [https://github.com/yourusername/project-name](https://github.com/yourusername/project-name)
+Project Link: [https://github.com/yourusername/project-name](https://github.com/FranciscoAndaur/auth-app)
 
 ## 🔮 Future Enhancements
 
