@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import { supabase } from './lib/supabaseClient'
 import Auth from './components/Auth'
+import ProfileCard from './components/ProfileCard'
 import Profile from './components/Profile'
 import Navbar from './components/Navbar'
 import './index.css'  // or './App.css' depending on your file name
@@ -30,10 +31,11 @@ export default function App() {
 
   return (
     <div>
-       <div className="min-h-screen bg-gray-50">
+       <div className="min-h-screen  bg-gray-50">
       <Navbar />
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Your main content goes here */}
+        {/* <ProfileCard /> */}
         <Profile />
         <h1 className="text-2xl font-bold text-gray-900">Welcome to Your App</h1>
     

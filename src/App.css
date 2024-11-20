@@ -44,3 +44,22 @@
 .read-the-docs {
   color: #888;
 }
+
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-lg font-medium transition-colors;
+  }
+  
+  .btn-primary {
+    @apply bg-primary-600 text-black hover:bg-primary-700;
+  }
+
+  .input {
+    @apply w-full rounded-lg border-gray-300 shadow-sm focus:border-primary-500 focus:ring-primary-500;
+  }
+
+  .card {
+    @apply bg-gray rounded-lg shadow-md overflow-hidden;
+  }
+}
