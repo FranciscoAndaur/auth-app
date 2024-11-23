@@ -6,6 +6,7 @@ import ProfileCard from './components/ProfileCard'
 import Profile from './components/Profile'
 import Navbar from './components/Navbar'
 import './index.css'  // or './App.css' depending on your file name
+import LotteryTicketForm from './components/LotteryForm'
 
 console.log('App component loaded')
 console.log('Supabase client:', supabase)
@@ -36,6 +37,7 @@ export default function App() {
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Your main content goes here */}
         {/* <ProfileCard /> */}
+        <LotteryTicketForm />
         <Profile />
         <h1 className="text-2xl font-bold text-gray-900">Welcome to Your App</h1>
     
@@ -46,6 +48,7 @@ export default function App() {
       ) : (
         <div className="p-4">
           <h1>Welcome {session.user.email}</h1>
+         
           <button
             onClick={() => supabase.auth.signOut()}
             className="px-4 py-2 font-bold text-white bg-red-500 rounded hover:bg-red-700"
